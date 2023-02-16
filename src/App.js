@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { SideBarNav } from './Components/SideBarNav';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="main bg-secondary p-5">
+        <div className="row h-100">
+
+          <div className="sidebar bg-white border border-1 border-dark col-4">
+              <SideBarNav/>
+          </div>
+
+          <div className="chatboxside bg-white border border-1 border-dark col-8">
+
+          </div>
+          
+        </div>
+      </div>
+    </>
   );
 }
 
